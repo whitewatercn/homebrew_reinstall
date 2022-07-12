@@ -1,10 +1,9 @@
 #BatchInstall.py
 import os
-homebrews = {"upgrade " /
-        "anki",}
+homebrews = {"anki",}
 try:
-    for homebrew in wingets:
-        os.system("homebrew install"+homebrew)
+    for homebrew in homebrews:
+        os.system("brew install "+homebrew)
     print("Successful")        
 except:
     print("Failed Somehow")
